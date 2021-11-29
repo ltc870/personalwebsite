@@ -8,84 +8,92 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css"> 
+  <script src="https://kit.fontawesome.com/3a08cd72db.js" crossorigin="anonymous"></script>
   <title>Lawrence Caudle | Web Developer</title>
 </head>
 <body>
-  <div>
-    <div>
-      <figure>
-        <img src="/images/lionhead.svg" alt=" ">
-        <p>Lawrence Caudle</p>
+  <div class="container">
+
+    <div class="navigation-section">
+      <figure class="navigation-logo-set">
+        <a class="navigation-logo" href=""><img src="/images/lionhead.svg" alt=" "></a>
+        <a class="navigation-name" href=""><p>Lawrence Caudle</p></a>
       </figure>
       <button aria-labe;="Open navigation" class="open-nav">&#9776;</button>
-      <nav>
+      <nav class="navigation">
         <button aria-label="Close navigation" class="close-nav">&times;</button>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#technology">Technology</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#social">social</a></li>
+        <ul class="nav-flex">
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#technology">Technology</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li class="nav-item"><a href="#social">social</a></li>
         </ul>
       </nav>
     </div>
-    <header>
-      <h1>Welcome, I'm Lawrence</h1>
-      <p>Web Development Enthusiast</p>
+
+    <header class="hero-section">
+      <h1 class="hero-title">Welcome, I'm Lawrence</h1>
+      <p class="hero-subtitle">Web Development Enthusiast</p>
     </header>
-    <main>
-      <h2>A LITTLE BIT ABOUT ME!!</h2>
-      <div>
-        <img src="/images/IMG_0044.JPG" alt="Lawrence">
-        <p>My name is Lawrence Caudle. I began learning web development March, 2021 as a way to gain a new skill and to explore other avenues that may interest me. Although web development has it’s challenges, I’ve loved it ever since and I’m excited to see where this new found skill will take me!</p>
-        <p>When I’m not upgrading my skills, you can find me enjoying time with my fiance, doing stand up comedy, or hiking!
+
+    <main class="about-section">
+      <h2 class="about-title">A LITTLE BIT ABOUT ME!!</h2>
+      <div class="about-body">
+        <img class="about-img" src="/images/IMG_0044.JPG" alt="Lawrence">
+        <p class="about-text">My name is Lawrence Caudle. I began learning web development March, 2021 as a way to gain a new skill and to explore other avenues that may interest me. Although web development has it’s challenges, I’ve loved it ever since and I’m excited to see where this new found skill will take me!</p>
+        <p class="about-text">When I’m not upgrading my skills, you can find me enjoying time with my fiance, doing stand up comedy, or hiking!
         </p>
       </div>
     </main>
-    <section>
-      <h2>TECHNOLOGY I'M USING</h2>
-      <div>
-        <img src="/images/html.png" alt="html">
-        <img src="/images/css.png" alt="css">
-        <img src="/images/javascript.png" alt="javascript">
-        <img src="/images/sass.png" alt="sass">
-        <img src="/images/bootstrap.png" alt="bootstrap">
-        <img src="/images/git.png" alt="git">
+
+    <section class="technology-section">
+      <h2 class="tech-title">TECHNOLOGY I'M USING</h2>
+      <div class="tech-grid">
+        <img class="tech-img html" src="/images/html.png" alt="html">
+        <img class="tech-img css" src="/images/css.png" alt="css">
+        <img class="tech-img javascript" src="/images/javascript.png" alt="javascript">
+        <img class="tech-img sass" src="/images/sass.png" alt="sass">
+        <img class="tech-img bootstrap" src="/images/bootstrap.png" alt="bootstrap">
+        <img class="tech-img git" src="/images/git.png" alt="git">
       </div>
     </section>
-    <section>
-      <h2>PROJECTS</h2>
-      <p>Here are some of the projects I've completed so far. These projects are from Frontend Mentor, a website for developers to practice their frontend skills. Although I'm still learning, I had a blast working on these and had a great time developing my skills with these! These projects primarily consists of me utilizing CSS Grid and CSS Flexbox, so I definitely pushed myself with using those layout methods. Please take a look; If you're a web developer, I'm open to any critiques you have!</p>
-      <div>
-        <div>
-          <img src="/images/meetscreenshot.png" alt="Meet Landing Page">
+
+    <section class="projects-section">
+      <h2 class="projects-title">PROJECTS</h2>
+      <p class="projects-text">Here are some of the projects I've completed so far. These projects are from Frontend Mentor, a website for developers to practice their frontend skills. Although I'm still learning, I had a blast working on these and had a great time developing my skills with these! These projects primarily consists of me utilizing CSS Grid and CSS Flexbox, so I definitely pushed myself with using those layout methods. Please take a look; If you're a web developer, I'm open to any critiques you have!</p>
+      <div class="projects-grid">
+        <div class="projects-img">
+          <a href="#"><img src="/images/meetscreenshot.png" alt="Meet Landing Page"></a>
           <h3>Meet Landing Page</h3>
         </div>
-        <div>
-          <img src="/images/fourcardscreenshot.png" alt="Four Card Feature Section">
+        <div class="projects-img">
+          <a href="#"><img src="/images/fourcardscreenshot.png" alt="Four Card Feature Section"></a>
           <h3>Four Card Feature Section</h3>
         </div>
-        <div>
-          <img src="/images/ordersummaryscreenshot.png" alt="Order Summary Card Component">
+        <div class="projects-img">
+          <a href=""><img src="/images/ordersummaryscreenshot.png" alt="Order Summary Card Component"></a>
           <h3>Order Summary Card Component</h3>
         </div>
-        <div>
-          <img src="/images/threecolumnscreenshot.png" alt="Three Column Card Component">
+        <div class="projects-img">
+          <a href=""><img src="/images/threecolumnscreenshot.png" alt="Three Column Card Component"></a>
           <h3>Three Column Card Component</h3>
         </div>
       </div>
     </section>
-    <section>
-      <img src="/images/email20.svg" alt=" ">
-      <h2>SEND ME AN EMAIL</h2>
+
+    <section class="contact-me-section">
+      <img class="contact-me-img" src="/images/email20.svg" alt=" ">
+      <h2 class="contact-me-title">SEND ME AN EMAIL</h2>
     </section>
-    <footer>
-      <h2>WHERE YOU CAN FIND ME!</h2>
-      <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
+
+    <footer class="social-section">
+      <h2 class="social-title">WHERE YOU CAN FIND ME!</h2>
+      <ul class="social-flex">
+        <li class="social-link"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="social-link"><a href="#"></a><i class="fab fa-github"></i></li>
+        <li class="social-link"><a href="#"></a><i class="fab fa-linkedin"></i></li>
+      </ul>
       <p></p>
     </footer>
   </div>
