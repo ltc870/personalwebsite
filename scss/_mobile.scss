@@ -4,9 +4,10 @@
 
 
 .navigation-section {
-  background-color: #595758;
+  background-color: var(--primary-color);
   width: 100%; 
   display: flex;
+  align-items: flex-start;
 }
 
 .navigation-logo-flex {
@@ -21,15 +22,21 @@
 .navigation-name {
   margin-left: .2em;
   text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .navigation-logo {
   width: 7%;
 }
 
+.navigation-name:hover,
+.navigation-name:focus {
+  color: var(--third-color);
+}
+
 .navigation {
   position: fixed;
-  background-color: #000000;
+  background-color: var(--primary-color);
   width: 100%;
   top: 0;
   right: 0;
@@ -37,6 +44,7 @@
   left: 100%;
   transform: translateX(0);
   transition: transform 250ms;
+  z-index: 10;
 }
 
 .navigation-open {
@@ -55,16 +63,21 @@
 }
 
 .nav-item {
-  color: #ffffff;
   text-decoration: none;
   font-size: 3rem;
   font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--third-color);
 }
 
 .close-navigation {
   border: 0;
   background: 0;
-  color: #ffffff; 
+  color: var(--secondary-color); 
   font-weight: 700;
   font-size: 3rem;
   cursor: pointer;
@@ -72,13 +85,93 @@
   position: absolute;
 }
 
+.close-navigation:hover,
+.close-navigation:focus {
+  color: var(--third-color);
+}
+
 .open-navigation {
   border: 0;
   background: 0;
-  color: #000000;
+  color: var(--secondary-color);
   cursor: pointer;
   padding: .5em;
   margin-left: auto;
   font-size: 1.5em;
+  align-self: center;
 }
+
+.open-navigation:hover,
+.open-navigation:focus {
+  color: var(--third-color);
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.hero-section::after {
+  content: "";
+  background-image: url("/images/macbookairmobile.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .65;
+}
+
+.hero-title,
+.hero-subtitle {
+  position: relative;
+  font-weight: 700;
+  color: var(--secondary-color);
+  z-index: 5;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-img {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-text {
+  text-align: center;
+  line-height: 1.6
+}
+
+.about-text:nth-child(3) {
+  margin-bottom: 3em;
+}
+
+.tech-title {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+
+
 

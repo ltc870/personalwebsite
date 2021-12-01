@@ -1,3 +1,7 @@
+/************************
+    GLOBAL STYLES
+************************/
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +12,12 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --primary-color: #595758;
+  --secondary-color: #000000;
+  --third-color: #ffac1c;
+}
+
 body {
   font-family: 'Nova Round', sans-serif;
   margin: 0;
@@ -16,7 +26,7 @@ body {
 
 .container {
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
