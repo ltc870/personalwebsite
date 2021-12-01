@@ -82,7 +82,7 @@ img {
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
-  z-index: 10; }
+  z-index: 15; }
 
 .navigation-open {
   -webkit-transform: translateX(-100%);
@@ -181,7 +181,7 @@ img {
   position: relative;
   font-weight: 700;
   color: var(--secondary-color);
-  z-index: 5; }
+  z-index: 7; }
 
 .hero-title {
   font-size: 3rem; }
