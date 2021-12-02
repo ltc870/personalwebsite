@@ -279,10 +279,10 @@ img {
           transform: translate(-50%, -50%);
   text-align: center; }
 
-.project-image:hover {
+.projects-img:hover .project-image {
   opacity: 0.3; }
 
-.middle:hover {
+.projects-img:hover .middle {
   opacity: 1; }
 
 .projects-go {
