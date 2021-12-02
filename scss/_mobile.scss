@@ -2,6 +2,9 @@
     MOBILE STYLES
 ************************/
 
+/************************
+  NAVIGATION SECTION
+************************/
 
 .navigation-section {
   background-color: var(--primary-color);
@@ -106,6 +109,10 @@
   color: var(--third-color);
 }
 
+/************************
+    HEADER SECTION
+************************/
+
 .hero-section {
   position: relative;
   width: 100%;
@@ -146,6 +153,10 @@
   font-size: 1.2rem;
 }
 
+/************************
+    ABOUT SECTION
+************************/
+
 .about-title {
   text-align: center;
 }
@@ -166,6 +177,10 @@
 .about-text:nth-child(3) {
   margin-bottom: 3em;
 }
+
+/************************
+    TECH SECTION
+************************/
 
 .tech-title {
   text-align: center;
@@ -204,6 +219,10 @@
   filter: initial;
   transition: ease-in-out .3s;
 }
+
+/************************
+    PROJECTS SECTION
+************************/
 
 .projects-title {
   text-align: center;
@@ -264,6 +283,10 @@
   margin-bottom: 3em;
 }
 
+/************************
+    CONTACT ME SECTION
+************************/
+
 .contact-me-section {
   text-align: center;
 }
@@ -278,6 +301,10 @@
   margin-top: 0;
   margin-bottom: 3em;
 }
+
+/************************
+    SOCIAL SECTION
+************************/
 
 .social-section {
   background-color: var(--primary-color);

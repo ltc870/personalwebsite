@@ -32,6 +32,9 @@ img {
 /************************
     MOBILE STYLES
 ************************/
+/************************
+  NAVIGATION SECTION
+************************/
 .navigation-section {
   background-color: var(--primary-color);
   width: 100%;
@@ -145,6 +148,9 @@ img {
 .open-navigation:focus {
   color: var(--third-color); }
 
+/************************
+    HEADER SECTION
+************************/
 .hero-section {
   position: relative;
   width: 100%;
@@ -189,6 +195,9 @@ img {
 .hero-subtitle {
   font-size: 1.2rem; }
 
+/************************
+    ABOUT SECTION
+************************/
 .about-title {
   text-align: center; }
 
@@ -206,6 +215,9 @@ img {
 .about-text:nth-child(3) {
   margin-bottom: 3em; }
 
+/************************
+    TECH SECTION
+************************/
 .tech-title {
   text-align: center;
   margin-bottom: 1.5em; }
@@ -242,6 +254,9 @@ img {
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s; }
 
+/************************
+    PROJECTS SECTION
+************************/
 .projects-title {
   text-align: center;
   margin-bottom: 1em; }
@@ -295,6 +310,9 @@ img {
   text-align: center;
   margin-bottom: 3em; }
 
+/************************
+    CONTACT ME SECTION
+************************/
 .contact-me-section {
   text-align: center; }
 
@@ -307,6 +325,9 @@ img {
   margin-top: 0;
   margin-bottom: 3em; }
 
+/************************
+    SOCIAL SECTION
+************************/
 .social-section {
   background-color: var(--primary-color);
   width: 100%;
