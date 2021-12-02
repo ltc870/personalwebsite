@@ -172,6 +172,38 @@
   margin-bottom: 1.5em;
 }
 
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.tech-img {
+  width: 30%;
+  filter: grayscale(100%);
+}
+
+
+.javascript,
+.sass {
+  margin-top: 1em;
+}
+
+.git {
+  width: 100%;
+}
+
+.html:hover,
+.css:hover,
+.javascript:hover,
+.sass:hover,
+.bootstrap:hover,
+.git:hover {
+  filter: initial;
+  transition: ease-in-out .3s;
+}
 
 
 

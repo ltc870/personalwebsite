@@ -22,7 +22,7 @@ body {
   padding: 0; }
 
 .container {
-  width: 80%;
+  width: 85%;
   max-width: 400px;
   margin: 0 auto; }
 
@@ -209,5 +209,37 @@ img {
 .tech-title {
   text-align: center;
   margin-bottom: 1.5em; }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center; }
+
+.tech-img {
+  width: 30%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+
+.javascript,
+.sass {
+  margin-top: 1em; }
+
+.git {
+  width: 100%; }
+
+.html:hover,
+.css:hover,
+.javascript:hover,
+.sass:hover,
+.bootstrap:hover,
+.git:hover {
+  -webkit-filter: initial;
+          filter: initial;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s; }
 
 /*# sourceMappingURL=styles.css.map */
