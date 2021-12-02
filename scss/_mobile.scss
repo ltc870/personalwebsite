@@ -205,5 +205,57 @@
   transition: ease-in-out .3s;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1 auto;
+  grid-template-rows: repeat(4, auto);
+}
+
+.projects-img {
+  position: relative;
+  width: 100%;
+}
+
+.project-image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projects-img:hover {
+  opacity: .3;
+}
+
+.middle:hover {
+  opacity: 1;
+}
+
+.projects-go {
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 1em 3em;
+  display: block;
+  position: relative;
+}
+
+.projects-name {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+
+
 
 
