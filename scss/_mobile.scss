@@ -311,6 +311,24 @@
   width: 100%;
   padding-top: 1em;
   padding-bottom: 2em;
+  text-align: center;
+}
+
+.social-flex {
+  display: flex;
+  list-style-type: none;
+  font-size: 2em;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+.fab {
+  color: var(--secondary-color);
+}
+
+.fab:hover,
+.fab:focus {
+  color: var(--third-color);
 }
 
 

@@ -332,6 +332,25 @@ img {
   background-color: var(--primary-color);
   width: 100%;
   padding-top: 1em;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  text-align: center; }
+
+.social-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  font-size: 2em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 0; }
+
+.fab {
+  color: var(--secondary-color); }
+
+.fab:hover,
+.fab:focus {
+  color: var(--third-color); }
 
 /*# sourceMappingURL=styles.css.map */
