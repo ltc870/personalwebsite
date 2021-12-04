@@ -43,7 +43,11 @@ img {
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10; }
 
 .navigation-logo-flex {
   display: -webkit-box;
@@ -69,7 +73,8 @@ img {
 
 .navigation-name:hover,
 .navigation-name:focus {
-  color: var(--third-color); }
+  color: var(--third-color);
+  cursor: pointer; }
 
 .navigation {
   position: fixed;
@@ -213,7 +218,7 @@ img {
   line-height: 1.6; }
 
 .about-text:nth-child(3) {
-  margin-bottom: 3em; }
+  margin-bottom: 4em; }
 
 /************************
     TECH SECTION
@@ -229,7 +234,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  margin-bottom: 3em; }
 
 .tech-img {
   width: 30%;
