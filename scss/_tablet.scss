@@ -32,19 +32,25 @@
     ABOUT SECTION
 ************************/
 
+.about-section {
+  margin-bottom: 4em;
+}
+
 .about-body {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .about-img {
   width: 40%;
   align-self: center;
+  margin-left: 2em;
 }
 
 .about-text {
   width: 40%;
   text-align: left;
+  margin-right: 2em;
 }
 
 /************************
@@ -54,6 +60,7 @@
 .tech-grid {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
+  margin-bottom: 4em;
 }
 
 /************************
@@ -64,6 +71,7 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 20px;
+  margin-bottom: 4em;
 }
 
 .middle {
