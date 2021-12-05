@@ -4,6 +4,10 @@
 
 @import "mobile";
 
-@import "tablet";
+@media (min-width: 700px) {
+  @import "tablet";
+}
 
-@import "desktop";
+@media (min-width: 1200px) {
+  @import "desktop";
+}
