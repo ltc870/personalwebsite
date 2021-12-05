@@ -1,0 +1,79 @@
+/************************
+    TABLET STYLES
+************************/
+
+/************************
+    HEADER SECTION
+************************/
+
+.hero-section {
+  padding: 10em;
+}
+
+.hero-section::after {
+  content: "";
+  background-image: url("/images/mackbookairtablet.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .65;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+}
+
+/************************
+    ABOUT SECTION
+************************/
+
+.about-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-img {
+  width: 40%;
+  align-self: center;
+}
+
+.about-text {
+  width: 40%;
+  text-align: left;
+}
+
+/************************
+    TECH SECTION
+************************/
+
+.tech-grid {
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+/************************
+  PROJECT SECTION
+************************/
+
+.projects-grid {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.middle {
+  top: 30%;
+}
+
+/************************
+  CONTACT ME SECTION
+************************/
+
+.contact-me-img {
+  width: 10%;
+}

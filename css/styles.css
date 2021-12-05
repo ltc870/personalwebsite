@@ -215,9 +215,7 @@ img {
 
 .about-text {
   text-align: center;
-  line-height: 1.6; }
-
-.about-text:nth-child(3) {
+  line-height: 1.6;
   margin-bottom: 4em; }
 
 /************************
@@ -294,7 +292,7 @@ img {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -358,5 +356,75 @@ img {
 .fab:hover,
 .fab:focus {
   color: var(--third-color); }
+
+@media (min-width: 700px) {
+  /************************
+      TABLET STYLES
+  ************************/
+  /************************
+      HEADER SECTION
+  ************************/
+  .hero-section {
+    padding: 10em; }
+
+  .hero-section::after {
+    content: "";
+    background-image: url("/images/mackbookairtablet.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .65; }
+
+  .container {
+    width: 80%;
+    max-width: 800px; }
+
+  /************************
+      ABOUT SECTION
+  ************************/
+  .about-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  .about-img {
+    width: 40%;
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+  .about-text {
+    width: 40%;
+    text-align: left; }
+
+  /************************
+      TECH SECTION
+  ************************/
+  .tech-grid {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto); }
+
+  /************************
+    PROJECT SECTION
+  ************************/
+  .projects-grid {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; }
+
+  .middle {
+    top: 30%; }
+
+  /************************
+    CONTACT ME SECTION
+  ************************/
+  .contact-me-img {
+    width: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */
