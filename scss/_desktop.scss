@@ -1,0 +1,40 @@
+/************************
+    DESKTOP STYLES
+************************/
+
+/************************
+    HEADER SECTION
+************************/
+
+.hero-section {
+padding: 18em;
+}
+
+.hero-section::after {
+  content: "";
+  background-image: url("/images/macbookairdesktop.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .65;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+}
+
+/************************
+    PROJECTS SECTION
+************************/
+
+.projects-grid {
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 1, auto;
+  gap: 20px;
+  margin-bottom: 4em;
+}
