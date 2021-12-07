@@ -7,6 +7,8 @@ const projectEl = document.querySelector('.project');
 const contactEl = document.querySelector('.contact');
 const socialEl = document.querySelector('.social');
 const navNameEl = document.querySelector('.navigation-name');
+const mediaQuery1 = window.matchMedia('(min-width: 600px)');
+const mediaQuery2 = window.matchMedia('(min-width: 1000px)');
 
 // To close the navigation window
 closeButton.addEventListener("click", () => {
@@ -52,3 +54,59 @@ socialEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
   scrollTo({top: 3000, left: 0, behavior: "smooth"});
 });
+
+
+if (mediaQuery1.matches) {
+  aboutEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top:650, left: 0, behavior: "smooth"});
+  });
+
+  techEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 1300, left: 0, behavior: "smooth"});
+  });
+
+  projectEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 1650, left: 0, behavior: "smooth"});
+  });
+
+  contactEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 3000, left: 0, behavior: "smooth"});
+  });
+
+  socialEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 3000, left: 0, behavior: "smooth"});
+  });
+};
+
+
+if (mediaQuery2.matches) {
+  aboutEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 850, left: 0, behavior: "smooth"});
+  });
+
+  techEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 1400, left: 0, behavior: "smooth"});
+  });
+
+  projectEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 1850, left: 0, behavior: "smooth"});
+  });
+
+  contactEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 3000, left: 0, behavior: "smooth"});
+  });
+
+  socialEl.addEventListener("click", () => {
+    nav.classList.remove('navigation-open');
+    scrollTo({top: 3000, left: 0, behavior: "smooth"});
+  });
+}
