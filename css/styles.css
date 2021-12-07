@@ -76,10 +76,70 @@ img {
   color: var(--third-color);
   cursor: pointer; }
 
-.close-navigation {
-  display: none; }
+.navigation {
+  position: fixed;
+  background-color: var(--primary-color);
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  z-index: 15; }
 
-.dropbtn {
+.navigation-open {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%); }
+
+.nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.nav-item {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary-color); }
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--third-color); }
+
+.close-navigation {
+  display: block;
+  border: 0;
+  background: 0;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: .5em;
+  position: absolute; }
+
+.close-navigation:hover,
+.close-navigation:focus {
+  color: var(--third-color); }
+
+.open-navigation {
   border: 0;
   background: 0;
   color: var(--secondary-color);
@@ -90,34 +150,9 @@ img {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.dropbtn:hover,
-.dropbtn:focus {
+.open-navigation:hover,
+.open-navigation:focus {
   color: var(--third-color); }
-
-.dropdown {
-  position: relative;
-  display: inline-block; }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--primary-color);
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
-
-.nav-item {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block; }
-
-.nav-item:hover {
-  background-color: #ddd; }
-
-.show {
-  display: block; }
 
 /************************
     HEADER SECTION
@@ -330,87 +365,6 @@ img {
       TABLET STYLES
   ************************/
   /************************
-    NAVIGATION SECTION
-  ************************/
-  .navigation {
-    position: fixed;
-    background-color: var(--primary-color);
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 100%;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transition: -webkit-transform 250ms;
-    transition: -webkit-transform 250ms;
-    transition: transform 250ms;
-    transition: transform 250ms, -webkit-transform 250ms;
-    z-index: 15; }
-
-  .navigation-open {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%); }
-
-  .nav-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-
-  .nav-item {
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--secondary-color); }
-
-  .nav-item:hover,
-  .nav-item:focus {
-    color: var(--third-color); }
-
-  .close-navigation {
-    display: block;
-    border: 0;
-    background: 0;
-    color: var(--secondary-color);
-    font-weight: 700;
-    font-size: 3rem;
-    cursor: pointer;
-    padding: .5em;
-    position: absolute; }
-
-  .close-navigation:hover,
-  .close-navigation:focus {
-    color: var(--third-color); }
-
-  .open-navigation {
-    border: 0;
-    background: 0;
-    color: var(--secondary-color);
-    cursor: pointer;
-    padding: .5em;
-    margin-left: auto;
-    font-size: 1.5em;
-    -ms-flex-item-align: center;
-        align-self: center; }
-
-  .open-navigation:hover,
-  .open-navigation:focus {
-    color: var(--third-color); }
-
-  /************************
       HEADER SECTION
   ************************/
   .hero-section {
@@ -513,4 +467,5 @@ img {
   ************************/
   .projects-grid {
     gap: 30px; } }
+
 /*# sourceMappingURL=styles.css.map */
