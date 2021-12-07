@@ -6,6 +6,41 @@
   NAVIGATION SECTION
 ************************/
 
+.navigation-logo-flex {
+  margin-left: 2em;
+}
+
+.navigation-name {
+  font-size: 1.3rem;
+}
+
+.open-navigation,
+.close-navigation {
+  display: none;
+}
+
+.navigation {
+  position: initial;
+}
+
+.navigation-section {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-flex {
+  flex-direction: row;
+  margin-right: 2em;
+}
+
+.nav-item {
+  margin-left: 2em;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+}
+
 /************************
     HEADER SECTION
 ************************/
@@ -30,6 +65,14 @@ padding: 18em;
 .container {
   width: 80%;
   max-width: 1440px;
+}
+
+/************************
+    ABOUT SECTION
+************************/
+
+.about-section {
+  margin-bottom: 10em;
 }
 
 /************************
