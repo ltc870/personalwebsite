@@ -87,7 +87,7 @@ if (mediaQuery1.matches) {
 if (mediaQuery2.matches) {
   aboutEl.addEventListener("click", () => {
     nav.classList.remove('navigation-open');
-    scrollTo({top: 850, left: 0, behavior: "smooth"});
+    scrollTo({top: 775, left: 0, behavior: "smooth"});
   });
 
   techEl.addEventListener("click", () => {
@@ -97,7 +97,7 @@ if (mediaQuery2.matches) {
 
   projectEl.addEventListener("click", () => {
     nav.classList.remove('navigation-open');
-    scrollTo({top: 1850, left: 0, behavior: "smooth"});
+    scrollTo({top: 2025, left: 0, behavior: "smooth"});
   });
 
   contactEl.addEventListener("click", () => {
