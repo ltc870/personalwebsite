@@ -204,7 +204,7 @@ img {
 /************************
     ABOUT SECTION
 ************************/
-.about-section {
+#about {
   margin-bottom: 3em; }
 
 .about-title {
@@ -320,7 +320,7 @@ img {
 /************************
     CONTACT ME SECTION
 ************************/
-.contact-me-section {
+#contact {
   text-align: center; }
 
 .contact-me-img {
@@ -335,7 +335,7 @@ img {
 /************************
     SOCIAL SECTION
 ************************/
-.social-section {
+#social {
   background-color: var(--primary-color);
   width: 100%;
   padding-top: 1em;
@@ -389,7 +389,7 @@ img {
   /************************
       ABOUT SECTION
   ************************/
-  .about-section {
+  #about {
     margin-bottom: 4em; }
 
   .about-body {
@@ -502,7 +502,7 @@ img {
   /************************
       ABOUT SECTION
   ************************/
-  .about-section {
+  #about {
     margin-bottom: 10em; }
 
   /************************
