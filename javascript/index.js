@@ -24,3 +24,29 @@ openButton.addEventListener("click", () => {
 navNameEl.addEventListener("click", () => {
   scrollTo({top: 0, left: 0, behavior: "smooth"});
 });
+
+// When the "about" link is clicked, then the browser will scroll to the "about" section
+aboutEl.addEventListener("click", () => {
+  nav.classList.remove('navigation-open');
+});
+
+// When the "technology" link is clicked, then the browser will scroll to the "technology" section
+techEl.addEventListener("click", () => {
+  nav.classList.remove('navigation-open');
+});
+
+// When the "project" link is clicked, then the browser will scroll to the "project" section
+projectEl.addEventListener("click", () => {
+  nav.classList.remove('navigation-open');
+});
+
+// When the "contact" link is clicked, then the browser will scroll to the "contact" section
+contactEl.addEventListener("click", () => {
+  nav.classList.remove('navigation-open');
+});
+
+// When the "contact" link is clicked, then the browser will scroll to the "contact" section
+socialEl.addEventListener("click", () => {
+  nav.classList.remove('navigation-open');
+});
+
