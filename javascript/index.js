@@ -7,8 +7,7 @@ const projectEl = document.querySelector('.project');
 const contactEl = document.querySelector('.contact');
 const socialEl = document.querySelector('.social');
 const navNameEl = document.querySelector('.navigation-name');
-const mediaQuery1 = window.matchMedia('(min-width: 600px)');
-const mediaQuery2 = window.matchMedia('(min-width: 1000px)');
+
 
 // To close the navigation window
 closeButton.addEventListener("click", () => {
