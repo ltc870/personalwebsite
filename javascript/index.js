@@ -1,12 +1,12 @@
-const closeButton = document.getElementById('close-navigation');
-const openButton = document.getElementById('open-navigation');
-const nav = document.getElementById('navigation');
-const aboutEl = document.getElementById('about');
-const techEl = document.getElementById('tech');
-const projectEl = document.getElementById('project');
-const contactEl = document.getElementById('contact');
-const socialEl = document.getElementById('social');
-const navNameEl = document.getElementById('navigation-name');
+const closeButton = document.querySelector('.close-navigation');
+const openButton = document.querySelector('.open-navigation');
+const nav = document.querySelector('.navigation');
+const aboutEl = document.querySelector('.about');
+const techEl = document.querySelector('.tech');
+const projectEl = document.querySelector('.project');
+const contactEl = document.querySelector('.contact');
+const socialEl = document.querySelector('.social');
+const navNameEl = document.querySelector('.navigation-name');
 
 
 // To close the navigation window
