@@ -1,0 +1,86 @@
+/************************
+    DESKTOP STYLES
+************************/
+
+/************************
+  NAVIGATION SECTION
+************************/
+
+.navigation-logo-flex {
+  margin-left: 2em;
+}
+
+.navigation-name {
+  font-size: 1.3rem;
+}
+
+.open-navigation,
+.close-navigation {
+  display: none;
+}
+
+.navigation {
+  position: initial;
+}
+
+.navigation-section {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-flex {
+  flex-direction: row;
+  margin-right: 2em;
+}
+
+.nav-item {
+  margin-left: 2em;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+}
+
+/************************
+    HEADER SECTION
+************************/
+
+.hero-section {
+padding: 18em;
+}
+
+.hero-section::after {
+  content: "";
+  background-image: url("/images/macbookairdesktop.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .65;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+}
+
+/************************
+    ABOUT SECTION
+************************/
+
+#about {
+  margin-bottom: 10em;
+}
+
+/************************
+  PROJECT SECTION
+************************/
+
+.projects-grid {
+  gap: 30px;
+}
+
+
