@@ -20,7 +20,7 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 100%;
+  width: 80%;
   margin-left: .5em; 
   margin-top: 1em;
 }
@@ -163,7 +163,7 @@
     ABOUT SECTION
 ************************/
 
-.about-section {
+#about {
   margin-bottom: 3em;
 }
 
@@ -294,7 +294,7 @@
     CONTACT ME SECTION
 ************************/
 
-.contact-me-section {
+#contact {
   text-align: center;
 }
 
@@ -313,7 +313,7 @@
     SOCIAL SECTION
 ************************/
 
-.social-section {
+#social {
   background-color: var(--primary-color);
   width: 100%;
   padding-top: 1em;

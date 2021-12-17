@@ -8,6 +8,7 @@ const contactEl = document.querySelector('.contact');
 const socialEl = document.querySelector('.social');
 const navNameEl = document.querySelector('.navigation-name');
 
+
 // To close the navigation window
 closeButton.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
@@ -26,29 +27,25 @@ navNameEl.addEventListener("click", () => {
 // When the "about" link is clicked, then the browser will scroll to the "about" section
 aboutEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
-  scrollTo({top:250, left: 0, behavior: "smooth"});
 });
 
 // When the "technology" link is clicked, then the browser will scroll to the "technology" section
 techEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
-  scrollTo({top: 840, left: 0, behavior: "smooth"});
 });
 
 // When the "project" link is clicked, then the browser will scroll to the "project" section
 projectEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
-  scrollTo({top: 1275, left: 0, behavior: "smooth"});
 });
 
 // When the "contact" link is clicked, then the browser will scroll to the "contact" section
 contactEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
-  scrollTo({top: 3000, left: 0, behavior: "smooth"});
 });
 
 // When the "contact" link is clicked, then the browser will scroll to the "contact" section
 socialEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
-  scrollTo({top: 3000, left: 0, behavior: "smooth"});
 });
+
