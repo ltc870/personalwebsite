@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css"> 
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="https://kit.fontawesome.com/3a08cd72db.js" crossorigin="anonymous"></script>
   <title>Lawrence Caudle | Web Developer</title>
 </head>
+
 <body>
+
+  <!----------------- NAVIGATION SECTION --------------------->
+  <section class="navigation-section">
+    <figure class="navigation-logo-flex">
+      <a class="navigation-logo" href="#"><img src="/images/lionhead.svg" alt=" "></a>
+      <p class="navigation-name">Lawrence Caudle</p>
+    </figure>
+    <button class="open-navigation" aria-labe;="Open navigation">&#9776;</button>
+    <nav class="navigation">
+      <button class="close-navigation" aria-label="Close navigation">&times;</button>
+      <ul class="nav-flex">
+        <li><a class="nav-item nav-link about" href="#about">About</a></li>
+        <li><a class="nav-item nav-link tech" href="#technology">Technology</a></li>
+        <li><a class="nav-item nav-link project" href="#projects">Projects</a></li>
+        <li><a class="nav-item nav-link contact" href="#contact">Contact</a></li>
+        <li><a class="nav-item nav-link social" href="#social">Social</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!----------------- HEADER SECTION --------------------->
+  <header class="hero-section">
+    <h1 class="hero-title">Welcome, I'm Lawrence</h1>
+    <p class="hero-subtitle">Web Development Enthusiast</p>
+  </header>
   <div class="container">
-    <!----------------- NAVIGATION SECTION --------------------->
-    <div class="navigation-section">
-      <figure class="navigation-logo-set">
-        <a class="navigation-logo" href=""><img src="/images/lionhead.svg" alt=" "></a>
-        <a class="navigation-name" href=""><p>Lawrence Caudle</p></a>
-      </figure>
-      <button aria-labe;="Open navigation" class="open-nav">&#9776;</button>
-      <nav class="navigation">
-        <button aria-label="Close navigation" class="close-nav">&times;</button>
-        <ul class="nav-flex">
-          <li class="nav-item"><a href="#about">About</a></li>
-          <li class="nav-item"><a href="#technology">Technology</a></li>
-          <li class="nav-item"><a href="#projects">Projects</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a></li>
-          <li class="nav-item"><a href="#social">social</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!----------------- HEADER SECTION --------------------->
-    <header class="hero-section">
-      <h1 class="hero-title">Welcome, I'm Lawrence</h1>
-      <p class="hero-subtitle">Web Development Enthusiast</p>
-    </header>
-    <!----------------- MAIN SECTION --------------------->
-    <main class="about-section">
+
+    <!----------------- ABOUT SECTION --------------------->
+    <main id="about">
       <h2 class="about-title">A LITTLE BIT ABOUT ME!!</h2>
       <div class="about-body">
         <img class="about-img" src="/images/IMG_0044.JPG" alt="Lawrence">
-        <p class="about-text">My name is Lawrence Caudle. I began learning web development March, 2021 as a way to gain a new skill and to explore other avenues that may interest me. Although web development has it’s challenges, I’ve loved it ever since and I’m excited to see where this new found skill will take me!</p>
-        <p class="about-text">When I’m not upgrading my skills, you can find me enjoying time with my fiance, doing stand up comedy, or hiking!
-        </p>
+        <p class="about-text">My name is Lawrence Caudle. I began learning web development March, 2021 as a way to gain a new skill and to explore other avenues that may interest me. Although web development has it’s challenges, I’ve loved it ever since and I’m excited to see where this new found skill will take me!<br><br>
+        When I’m not upgrading my skills, you can find me enjoying time with my fiance, doing stand up comedy, or hiking!</p> 
       </div>
     </main>
+
     <!----------------- TECHNOLOGY SECTION --------------------->
-    <section class="technology-section">
+    <section id="technology">
       <h2 class="tech-title">TECHNOLOGY I'M USING</h2>
       <div class="tech-grid">
         <img class="tech-img html" src="/images/html.png" alt="html">
@@ -58,45 +63,88 @@
         <img class="tech-img git" src="/images/git.png" alt="git">
       </div>
     </section>
+
     <!----------------- PROJECTS SECTION --------------------->
-    <section class="projects-section">
+    <section id="projects">
       <h2 class="projects-title">PROJECTS</h2>
-      <p class="projects-text">Here are some of the projects I've completed so far. These projects are from Frontend Mentor, a website for developers to practice their frontend skills. Although I'm still learning, I had a blast working on these and had a great time developing my skills with these! These projects primarily consists of me utilizing CSS Grid and CSS Flexbox, so I definitely pushed myself with using those layout methods. Please take a look; If you're a web developer, I'm open to any critiques you have!</p>
+      <p class="projects-text">Here are some of the projects I've completed so far. These projects are from Frontend
+        Mentor, a website for developers to practice their frontend skills. Although I'm still learning, I had a blast
+        working on these and had a great time developing my skills with these! These projects primarily consists of me
+        utilizing CSS Grid and CSS Flexbox, so I definitely pushed myself with using those layout methods. Please take a
+        look; If you're a web developer, I'm open to any critiques you have!</p>
       <div class="projects-grid">
+
         <div class="projects-img">
-          <a href="#"><img src="/images/meetscreenshot.png" alt="Meet Landing Page"></a>
-          <h3>Meet Landing Page</h3>
+          <a href="https://ltc870.github.io/meetlandingpage/" target="_blank"><img class="project-image"
+              src="/images/meetscreenshot.png" alt="Meet Landing Page">
+            <div class="middle">
+              <div class="projects-go">Go!</div>
+            </div>
+          </a>
+          <h3 class="projects-name">Meet Landing Page</h3>
         </div>
+        
+
         <div class="projects-img">
-          <a href="#"><img src="/images/fourcardscreenshot.png" alt="Four Card Feature Section"></a>
-          <h3>Four Card Feature Section</h3>
+          <a href="https://ltc870.github.io/four-card-feature-section/" target="_blank"><img class="project-image"
+              src="/images/fourcardscreenshot.png" alt="Four Card Feature Section">
+            <div class="middle">
+              <div class="projects-go">Go!</div>
+            </div>
+          </a>
+          <h3 class="projects-name">Four Card Feature Section</h3>
         </div>
+        
+
         <div class="projects-img">
-          <a href=""><img src="/images/ordersummaryscreenshot.png" alt="Order Summary Card Component"></a>
-          <h3>Order Summary Card Component</h3>
+          <a href="https://ltc870.github.io/ordersummarycomponentmain/" target="_blank"><img class="project-image"
+              src="/images/ordersummaryscreenshot.png" alt="Order Summary Card Component">
+            <div class="middle">
+              <div class="projects-go">Go!</div>
+            </div>
+          </a>
+          <h3 class="projects-name">Order Summary Card Component</h3>
         </div>
+        
+
         <div class="projects-img">
-          <a href=""><img src="/images/threecolumnscreenshot.png" alt="Three Column Card Component"></a>
-          <h3>Three Column Card Component</h3>
+          <a href="https://ltc870.github.io/3columnpreviewcardcomponent/" target="_blank"><img class="project-image"
+              src="/images/threecolumnscreenshot.png" alt="Three Column Card Component">
+            <div class="middle">
+              <div class="projects-go">Go!</div>
+            </div>
+          </a>
+          <h3 class="projects-name">Three Column Card Component</h3>
         </div>
+        
+
       </div>
     </section>
+
     <!----------------- CONTACT-ME SECTION --------------------->
-    <section class="contact-me-section">
-      <img class="contact-me-img" src="/images/email20.svg" alt=" ">
+    <section id="contact">
+      <a href="mailto:lawrencecaudle870@gmail.com"><img class="contact-me-img" src="/images/email20.svg" alt=" "></a>
       <h2 class="contact-me-title">SEND ME AN EMAIL</h2>
     </section>
-    <!----------------- SOCIAL SECTION --------------------->
-    <footer class="social-section">
-      <h2 class="social-title">WHERE YOU CAN FIND ME!</h2>
-      <ul class="social-flex">
-        <li class="social-link"><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li class="social-link"><a href="#"></a><i class="fab fa-github"></i></li>
-        <li class="social-link"><a href="#"></a><i class="fab fa-linkedin"></i></li>
-      </ul>
-      <p></p>
-    </footer>
   </div>
-<script src="/javascript/index.js"></script>
+
+  <!----------------- SOCIAL SECTION --------------------->
+  <footer id="social">
+    <div class="container">
+      <h2 class="social-title">WHERE YOU CAN FIND ME!!</h2>
+      <ul class="social-flex">
+        <li class="social-link"><a href="https://twitter.com/heymrcaudle" target="_blank"><i
+              class="fab fa-twitter"></i></a></li>
+        <li class="social-link"><a href="https://github.com/ltc870" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="social-link"><a href="https://linkedin.com/in/lawrence-caudle-ba0492b7" target="_blank"><i
+              class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <p>©Lawrence Caudle 2021</p>
+    </div>
+  </footer>
+
+  <script src="/javascript/index.js"></script>
 </body>
+
 </html>

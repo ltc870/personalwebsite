@@ -1,3 +1,6 @@
+/************************
+    GLOBAL STYLES
+************************/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -8,9 +11,504 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+:root {
+  --primary-color: #595758;
+  --secondary-color: #000000;
+  --third-color: #ffac1c; }
+
 body {
   font-family: 'Nova Round', sans-serif;
   margin: 0;
   padding: 0; }
+
+.container {
+  width: 85%;
+  max-width: 400px;
+  margin: 0 auto; }
+
+img {
+  width: 100%; }
+
+/************************
+    MOBILE STYLES
+************************/
+/************************
+  NAVIGATION SECTION
+************************/
+.navigation-section {
+  background-color: var(--primary-color);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+
+.navigation-logo-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-left: .5em;
+  margin-top: 1em; }
+
+.navigation-name {
+  margin-left: .2em;
+  text-decoration: none;
+  color: var(--secondary-color); }
+
+.navigation-logo {
+  width: 7%; }
+
+.navigation-name:hover,
+.navigation-name:focus {
+  color: var(--third-color);
+  cursor: pointer; }
+
+.navigation {
+  position: fixed;
+  background-color: var(--primary-color);
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  z-index: 15; }
+
+.navigation-open {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%); }
+
+.nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.nav-item {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary-color); }
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--third-color); }
+
+.close-navigation {
+  display: block;
+  border: 0;
+  background: 0;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: .5em;
+  position: absolute; }
+
+.close-navigation:hover,
+.close-navigation:focus {
+  color: var(--third-color); }
+
+.open-navigation {
+  border: 0;
+  background: 0;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: .5em;
+  margin-left: auto;
+  font-size: 1.5em;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.open-navigation:hover,
+.open-navigation:focus {
+  color: var(--third-color); }
+
+/************************
+    HEADER SECTION
+************************/
+.hero-section {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 3em; }
+
+.hero-section::after {
+  content: "";
+  background-image: url("/images/macbookairmobile.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .65; }
+
+.hero-title,
+.hero-subtitle {
+  position: relative;
+  font-weight: 700;
+  color: var(--secondary-color);
+  z-index: 7; }
+
+.hero-title {
+  font-size: 3rem; }
+
+.hero-subtitle {
+  font-size: 1.2rem; }
+
+/************************
+    ABOUT SECTION
+************************/
+#about {
+  margin-bottom: 3em; }
+
+.about-title {
+  text-align: center; }
+
+.about-img {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto; }
+
+.about-text {
+  text-align: center;
+  line-height: 1.6; }
+
+/************************
+    TECH SECTION
+************************/
+.tech-title {
+  text-align: center;
+  margin-bottom: 1.5em; }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-bottom: 3em; }
+
+.tech-img {
+  width: 30%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+
+.javascript,
+.sass {
+  margin-top: 1em; }
+
+.git {
+  width: 100%; }
+
+.html:hover,
+.css:hover,
+.javascript:hover,
+.sass:hover,
+.bootstrap:hover,
+.git:hover {
+  -webkit-filter: initial;
+          filter: initial;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s; }
+
+/************************
+    PROJECTS SECTION
+************************/
+.projects-title {
+  text-align: center;
+  margin-bottom: 1em; }
+
+.projects-text {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 3em; }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1 auto;
+  grid-template-rows: repeat(8, auto); }
+
+.projects-img {
+  position: relative;
+  width: 100%; }
+
+.project-image {
+  opacity: 1;
+  display: block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.middle {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center; }
+
+.projects-img:hover .project-image {
+  opacity: 0.3; }
+
+.projects-img:hover .middle {
+  opacity: 1; }
+
+.projects-go {
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 1em 3em; }
+
+.projects-name {
+  text-align: center;
+  margin-bottom: 3em; }
+
+/************************
+    CONTACT ME SECTION
+************************/
+#contact {
+  text-align: center; }
+
+.contact-me-img {
+  width: 20%;
+  display: block;
+  margin: 0 auto; }
+
+.contact-me-title {
+  margin-top: 0;
+  margin-bottom: 3em; }
+
+/************************
+    SOCIAL SECTION
+************************/
+#social {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center; }
+
+.social-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  font-size: 2em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 0; }
+
+.fab {
+  color: var(--secondary-color); }
+
+.fab:hover,
+.fab:focus {
+  color: var(--third-color); }
+
+@media (min-width: 600px) {
+  /************************
+      TABLET STYLES
+  ************************/
+  /************************
+      HEADER SECTION
+  ************************/
+  .hero-section {
+    padding: 10em; }
+
+  .hero-section::after {
+    content: "";
+    background-image: url("/images/mackbookairtablet.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .65; }
+
+  .container {
+    width: 80%;
+    max-width: 800px; }
+
+  /************************
+      ABOUT SECTION
+  ************************/
+  #about {
+    margin-bottom: 4em; }
+
+  .about-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+
+  .about-img {
+    width: 40%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: 2em; }
+
+  .about-text {
+    width: 40%;
+    text-align: left;
+    margin-right: 2em; }
+
+  /************************
+      TECH SECTION
+  ************************/
+  .tech-grid {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    margin-bottom: 4em; }
+
+  /************************
+    PROJECT SECTION
+  ************************/
+  .projects-grid {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    margin-bottom: 4em; }
+
+  .middle {
+    top: 30%; }
+
+  /************************
+    CONTACT ME SECTION
+  ************************/
+  .contact-me-img {
+    width: 10%; } }
+@media (min-width: 1000px) {
+  /************************
+      DESKTOP STYLES
+  ************************/
+  /************************
+    NAVIGATION SECTION
+  ************************/
+  .navigation-logo-flex {
+    margin-left: 2em; }
+
+  .navigation-name {
+    font-size: 1.3rem; }
+
+  .open-navigation,
+  .close-navigation {
+    display: none; }
+
+  .navigation {
+    position: initial; }
+
+  .navigation-section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  .nav-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 2em; }
+
+  .nav-item {
+    margin-left: 2em; }
+
+  .nav-link {
+    font-size: 1.3rem; }
+
+  /************************
+      HEADER SECTION
+  ************************/
+  .hero-section {
+    padding: 18em; }
+
+  .hero-section::after {
+    content: "";
+    background-image: url("/images/macbookairdesktop.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .65; }
+
+  .container {
+    width: 80%;
+    max-width: 1440px; }
+
+  /************************
+      ABOUT SECTION
+  ************************/
+  #about {
+    margin-bottom: 10em; }
+
+  /************************
+    PROJECT SECTION
+  ************************/
+  .projects-grid {
+    gap: 30px; } }
 
 /*# sourceMappingURL=styles.css.map */
