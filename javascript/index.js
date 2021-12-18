@@ -24,27 +24,27 @@ navNameEl.addEventListener("click", () => {
   scrollTo({top: 0, left: 0, behavior: "smooth"});
 });
 
-// When the "about" link is clicked, then the browser will scroll to the "about" section
+// When the "about" link is clicked, then nav window will close
 aboutEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
 });
 
-// When the "technology" link is clicked, then the browser will scroll to the "technology" section
+// When the "technology" link is clicked, then nav window will close
 techEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
 });
 
-// When the "project" link is clicked, then the browser will scroll to the "project" section
+// When the "project" link is clicked, then nav window will close
 projectEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
 });
 
-// When the "contact" link is clicked, then the browser will scroll to the "contact" section
+// When the "contact" link is clicked, then nav window will close
 contactEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
 });
 
-// When the "contact" link is clicked, then the browser will scroll to the "contact" section
+// When the "contact" link is clicked, then nav window will close
 socialEl.addEventListener("click", () => {
   nav.classList.remove('navigation-open');
 });
